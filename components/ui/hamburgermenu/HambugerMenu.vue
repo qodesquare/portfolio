@@ -44,11 +44,10 @@
   import { ref } from "vue";
   import Menu from "./Menu.vue";
 
-  const isOpen = ref(false);
-
-  const toggleMenu = () => {
-    isOpen.value = !isOpen.value;
-  };
+  const props = defineProps({
+    isOpen: Boolean,
+    toggleMenu: Function,
+  });
 </script>
 
 <style scoped></style>

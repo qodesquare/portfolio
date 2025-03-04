@@ -37,9 +37,7 @@
               <Button size="lg" variant="light" class="text-black-foreground"
                 >Book a session</Button
               >
-              <!-- <Button variant="light" class="text-black-foreground block md:hidden"
-                >Book a session</Button
-              > -->
+             
             </div>
             <div class="grid grid-cols-12 md:grid-cols-9 gap-4 md:gap-0">
               <SVGPointer class="col-start-3 w-20 md:w-28 md:col-start-4" />
@@ -127,6 +125,80 @@
         </div>
       </div>
     </section>
+    <!-- Our Solutions -->
+    <section class="container px-4 mx-auto mb-36">
+      <div class="flex flex-col gap-20">
+        <h2
+          class="text-4xl md:text-5xl font-semibold text-black-foreground text-center flex items-center justify-center"
+        >
+          Solutions We Offer,<br />
+          Tailored for You
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Card
+            class="h-[549px] border-none shadow-none bg-cover bg-center"
+            :style="{ backgroundImage: `url(${solution.bgImg})` }"
+            v-for="solution in solutions"
+            :key="solution.desc"
+          >
+            <CardContent
+              class="bg-black/60 text-white font-semibold flex flex-col justify-end h-full rounded-xl p-4 gap-8"
+            >
+              <CardHeader class="text-white font-semibold text-2xl p-0">
+                {{ solution.title }}
+              </CardHeader>
+              <p
+                class="inlinne-block align-text-bottom font-medium leading-8 text-xl md:text-2xl"
+              >
+                {{ solution.desc }}
+              </p>
+              <p class="flex gap-2 p-0">
+                Let's Talk
+                <img src="/imgs/arrow-up-right.svg" alt="arrow" class="w-6" />
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </section>
+    <!-- Our Work -->
+    <section class="container px-4 mx-auto mb-36">
+      <div class="flex flex-col gap-20">
+        <h2
+          class="text-4xl md:text-5xl font-semibold text-black-foreground text-center flex items-center justify-center"
+        >
+          Solutions We Offer,<br />
+          Tailored for You
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Card
+            class="h-[549px] border-none shadow-none bg-cover bg-center"
+            :style="{ backgroundImage: `url(${solution.bgImg})` }"
+            v-for="solution in solutions"
+            :key="solution.desc"
+          >
+            <CardContent
+              class="bg-black/60 text-white font-semibold flex flex-col justify-end h-full rounded-xl p-4 gap-8"
+            >
+              <CardHeader class="text-white font-semibold text-2xl p-0">
+                {{ solution.title }}
+              </CardHeader>
+              <p
+                class="inlinne-block align-text-bottom font-medium leading-8 text-xl md:text-2xl"
+              >
+                {{ solution.desc }}
+              </p>
+              <p class="flex gap-2 p-0">
+                Let's Talk
+                <img src="/imgs/arrow-up-right.svg" alt="arrow" class="w-6" />
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </section>
   </main>
 </template>
 
@@ -162,6 +234,23 @@
     {
       desc: "Slow business growth which makes it difficult to stay ahead of the competition.",
       bgImg: "/imgs/service4.jpeg",
+    },
+  ];
+  const solutions = [
+    {
+      desc: "A confusing or unattractive website drives customers away. We create easy-to-use, visually appealing designs that make your business stand out and keep users engaged",
+      bgImg: "/imgs/sol3.jpeg",
+      title: "Product Design",
+    },
+    {
+      desc: "Slow, outdated systems can cost you time and money. We build fast, reliable websites and software that help you work smarter and serve customers better.",
+      bgImg: "/imgs/sol2.jpeg",
+      title: "Software & Web Development",
+    },
+    {
+      desc: "Repetitive tasks waste valuable time. We use AI to automate processes, improve customer interactions, and help your business run more efficiently.",
+      bgImg: "/imgs/sol1.jpeg",
+      title: "AI Automation",
     },
   ];
 </script>
