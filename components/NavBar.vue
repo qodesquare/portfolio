@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="p-6 sticky top-0 bg-white/80 z-40"
+    class="p-6 sticky top-0 bg-white/80 z-40 md:backdrop-blur"
     :class="{ 'backdrop-blur': !isOpen }"
   >
     <div class="container mx-auto">

@@ -1,6 +1,6 @@
 <template>
   <main class="min-h-screen">
-    <section class="container px-4 mx-auto mb-36">
+    <Section>
       <div
         class="hero-bg h-[723px] md:h-[620px] mt-0 md:mt-6 relative rounded-2xl bg-blend-overlay bg-black bg-opacity-75"
         :style="heroBackgroundStyle"
@@ -9,11 +9,11 @@
           class="absolute top-0 left-0 h-full w-full rounded-2xl flex flex-col items-center justify-center"
         >
           <div
-            class="flex items-center justify-center flex-col gap-6 md:gap-9 text-center mt-[100px] px-3 md:p-0"
+            class="flex items-center justify-center flex-col gap-6 md:gap-8 lg:gap-9 text-center mt-[100px] px-3 md:p-0"
           >
             <img src="/white-logo.svg" alt="logo" class="w-[28px]" />
             <h1
-              class="text-[40px] leading-[50px] relative md:text-6xl font-semibold md:font-normal text-white px-2 md:px-0"
+              class="text-5xl md:px-16 leading-[50px] relative lg:text-6xl font-semibold md:font-normal text-white px-2 lg:px-0"
             >
               <span class="relative">
                 <SVGCrown
@@ -24,7 +24,7 @@
               >mpowering businesses with <br />
               cutting-edge technology solutions
             </h1>
-            <p class="text-base mt-4 font-normal text-white">
+            <p class="text-base mt-5 font-normal text-white">
               we help businesses rise with solutions
               <br class="block md:hidden" />
               from software development to
@@ -37,7 +37,6 @@
               <Button size="lg" variant="light" class="text-black-foreground"
                 >Book a session</Button
               >
-             
             </div>
             <div class="grid grid-cols-12 md:grid-cols-9 gap-4 md:gap-0">
               <SVGPointer class="col-start-3 w-20 md:w-28 md:col-start-4" />
@@ -45,12 +44,16 @@
           </div>
         </div>
       </div>
-    </section>
+    </Section>
 
     <!-- Our Approach -->
-    <section class="bg-black px-0 mb-36 overflow-hidden relative md:p-24 p-0">
+    <Section
+      class="bg-black px-0 mb-36 overflow-hidden relative md:p-24 p-0"
+      :container="false"
+    >
+      <!-- <section class="bg-black px-0 mb-36 overflow-hidden relative md:p-24 p-0"> -->
       <div
-        class="bg-cover text-white text-4xl/[3rem] md:text-5xl/[3.5rem] font-medium flex items-center justify-center text-center bg-center md:bg-contain bg-no-repeat h-[720px] md:h-[550px] px-7"
+        class="bg-cover text-white text-4xl/[3rem] lg:text-5xl/[3.5rem] font-medium flex items-center justify-center text-center bg-center md:bg-contain bg-no-repeat h-[720px] md:h-[450px] lg:h-[550px] px-7"
         :style="earthBackgroundStyle"
       >
         Our Approach is human centric <br />
@@ -60,26 +63,13 @@
         and services on <br class="block md:hidden" />
         Global standards
       </div>
-
-      <!-- <div class="grid grid-cols-12 gap-4 absolute">
-        <div class="col-span-12 md:col-span-6">
-          <h2 class="text-2xl font-semibold text-black-foreground">
-            Our Services
-          </h2>
-          <p class="text-base mt-4 font-normal text-black-foreground">
-            We provide a wide range of services to help businesses grow and
-            succeed. From software development to AI-driven innovation, we have
-            the expertise to help you build the future.
-          </p>
-        </div>
-      </div> -->
-    </section>
+    </Section>
 
     <!-- Our Services -->
-    <section class="container px-4 mx-auto mb-36">
+    <Section>
       <div class="flex flex-col gap-20">
         <h2
-          class="text-4xl md:text-5xl font-semibold text-black-foreground text-center flex items-center justify-center"
+          class="text-3xl md:text-4xl font-semibold text-black-foreground text-center flex items-center justify-center"
         >
           Why do you <br />
           need our services?
@@ -87,7 +77,7 @@
 
         <div class="grid grid-cols-4 gap-6">
           <Card
-            class="col-span-4 md:col-span-2 bg-[#F2F2F2] border-none shadow-none h-[240px] md:h-auto"
+            class="col-span-4 lg:col-span-2 bg-[#F2F2F2] border-none shadow-none h-[240px] md:h-[280px] lg:h-auto"
           >
             <CardContent class="grid grid-cols-3 p-6 align-bottom h-full">
               <p
@@ -98,12 +88,12 @@
               <img
                 src="/imgs/arrow.svg"
                 alt="arrow"
-                class="w-[38px] md:w-[60px] justify-self-end self-end transform rotate-90 md:rotate-0 -translate-y-4"
+                class="w-[38px] md:w-[60px] justify-self-end self-end transform rotate-90 lg:rotate-0 -translate-y-4"
               />
             </CardContent>
           </Card>
           <div
-            class="grid grid-cols-1 md:grid-cols-2 md:col-span-2 col-span-4 gap-6"
+            class="grid grid-cols-1 lg:grid-cols-2 lg:col-span-2 col-span-4 gap-6"
           >
             <Card
               class="h-[230px] border-none shadow-none bg-cover bg-center"
@@ -115,7 +105,7 @@
                 class="bg-black/60 text-white font-semibold flex items-end h-full rounded-xl p-4"
               >
                 <p
-                  class="inlinne-block align-text-bottom font-medium leading-6"
+                  class="text-xl inlinne-block align-text-bottom font-medium leading-6"
                 >
                   {{ service.desc }}
                 </p>
@@ -124,18 +114,18 @@
           </div>
         </div>
       </div>
-    </section>
+    </Section>
     <!-- Our Solutions -->
-    <section class="container px-4 mx-auto mb-36">
+    <Section>
       <div class="flex flex-col gap-20">
         <h2
-          class="text-4xl md:text-5xl font-semibold text-black-foreground text-center flex items-center justify-center"
+          class="text-3xl md:text-4xl font-semibold text-black-foreground text-center flex items-center justify-center"
         >
           Solutions We Offer,<br />
           Tailored for You
         </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
           <Card
             class="h-[549px] border-none shadow-none bg-cover bg-center"
             :style="{ backgroundImage: `url(${solution.bgImg})` }"
@@ -153,7 +143,7 @@
               >
                 {{ solution.desc }}
               </p>
-              <p class="flex gap-2 p-0">
+              <p class="flex gap-2 p-0 text-2xl font-semibold">
                 Let's Talk
                 <img src="/imgs/arrow-up-right.svg" alt="arrow" class="w-6" />
               </p>
@@ -161,44 +151,57 @@
           </Card>
         </div>
       </div>
-    </section>
+    </Section>
     <!-- Our Work -->
-    <section class="container px-4 mx-auto mb-36">
+    <Section>
       <div class="flex flex-col gap-20">
         <h2
-          class="text-4xl md:text-5xl font-semibold text-black-foreground text-center flex items-center justify-center"
+          class="text-3xl md:text-4xl font-semibold text-black-foreground text-center flex items-center justify-center"
         >
-          Solutions We Offer,<br />
-          Tailored for You
+          Our Work, Tailored <br />
+          for your Success
         </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Card
             class="h-[549px] border-none shadow-none bg-cover bg-center"
-            :style="{ backgroundImage: `url(${solution.bgImg})` }"
-            v-for="solution in solutions"
-            :key="solution.desc"
+            :style="{ backgroundImage: `url(${work.bgImg})` }"
+            v-for="work in works"
+            :key="work.text"
+            is="a"
+            :href="work.link"
+            target="_blank"
           >
             <CardContent
-              class="bg-black/60 text-white font-semibold flex flex-col justify-end h-full rounded-xl p-4 gap-8"
+              class="bg-black/50 text-white font-semibold flex flex-col justify-end h-full rounded-xl p-4 gap-8"
             >
-              <CardHeader class="text-white font-semibold text-2xl p-0">
-                {{ solution.title }}
+              <CardHeader class="text-white font-semibold text-2xl/9 p-0">
+                {{ work.text }}
               </CardHeader>
-              <p
-                class="inlinne-block align-text-bottom font-medium leading-8 text-xl md:text-2xl"
-              >
-                {{ solution.desc }}
-              </p>
-              <p class="flex gap-2 p-0">
-                Let's Talk
+              <p class="flex gap-2 p-0 text-2xl font-semibold" target="_blank">
+                Visit Site
                 <img src="/imgs/arrow-up-right.svg" alt="arrow" class="w-6" />
               </p>
             </CardContent>
           </Card>
         </div>
       </div>
-    </section>
+    </Section>
+    <!-- Testimonies -->
+    <Section>
+      <div class="flex flex-col gap-20">
+        <h2
+          class="text-3xl md:text-4xl font-semibold text-black-foreground text-center flex items-center justify-center"
+        >
+          Trusted by Businesses and <br />
+          individuals Like Yours
+        </h2>
+
+        <div class="grid grid-cols-1 gap-6">
+          <Testimonials :testimonials="testimonials" />
+        </div>
+      </div>
+    </Section>
   </main>
 </template>
 
@@ -206,6 +209,8 @@
   import SVGCrown from "@/components/ui/svgs/SVGCrown.vue";
   import SVGPointer from "@/components/ui/svgs/SVGPointer.vue";
   import SVGEarth from "@/components/ui/svgs/SVGEarth.vue";
+  import Testimonials from "@/components/templates/landing/Testimonials.vue";
+  import Section from "@/components/templates/Section.vue";
 
   const img = useImage();
   const heroBackgroundStyle = computed(() => {
@@ -251,6 +256,52 @@
       desc: "Repetitive tasks waste valuable time. We use AI to automate processes, improve customer interactions, and help your business run more efficiently.",
       bgImg: "/imgs/sol1.jpeg",
       title: "AI Automation",
+    },
+  ];
+
+  const works = [
+    {
+      bgImg: "/imgs/asup-work.png",
+      text: "ACADEMIC STAFF UNION OF POLYTECHNICS(ASUP) Nigeria.",
+      link: "https://asupng.org/",
+    },
+    {
+      bgImg: "/imgs/agile-work.png",
+      text: "ADOLESCENT GIRLS INITIATIVE FOR LEARNING AND EMPOWERMENT(AGILE) PROJECT.",
+      link: "https://agileproject.education.gov.ng/",
+    },
+  ];
+
+  const testimonials = [
+    {
+      name: "Edet Effiong",
+      title: "Head of operations, Battery alliance services ",
+      avatar: "/imgs/sol1.jpeg",
+      text: "Working with qodespace transformed our business. Their tech solutions streamlined our processes and boosted efficiency by 40%!",
+    },
+    {
+      name: "Edet Effiong",
+      title: "Head of operations, Battery alliance services ",
+      avatar: "/imgs/sol1.jpeg",
+      text: "Working with qodespace transformed our business. Their tech solutions streamlined our processes and boosted efficiency by 40%!",
+    },
+    {
+      name: "Edet Effiong",
+      title: "Head of operations, Battery alliance services ",
+      avatar: "/imgs/sol1.jpeg",
+      text: "Working with qodespace transformed our business. Their tech solutions streamlined our processes and boosted efficiency by 40%!",
+    },
+    {
+      name: "Edet Effiong",
+      title: "Head of operations, Battery alliance services ",
+      avatar: "/imgs/sol1.jpeg",
+      text: "Working with qodespace transformed our business. Their tech solutions streamlined our processes and boosted efficiency by 40%!",
+    },
+    {
+      name: "Edet Effiong",
+      title: "Head of operations, Battery alliance services ",
+      avatar: "/imgs/sol1.jpeg",
+      text: "Working with qodespace transformed our business. Their tech solutions streamlined our processes and boosted efficiency by 40%!",
     },
   ];
 </script>
