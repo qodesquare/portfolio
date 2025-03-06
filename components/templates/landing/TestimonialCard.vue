@@ -1,5 +1,7 @@
 <template>
-  <Card class="h-[500px] md:w-[480px] md:h-[290px] pt-6 bg-[#F2F2F2] border-none shadow-none">
+  <Card
+    class="h-[500px] md:w-[480px] md:h-[290px] pt-6 bg-[#F2F2F2] border-none shadow-none"
+  >
     <CardHeader class="mb-5 md:mb-0">
       <div class="flex flex-col md:flex-row gap-6 items-center">
         <Avatar class="w-[70px] h-[70px]">
@@ -15,16 +17,24 @@
       </div>
     </CardHeader>
     <CardContent>
-      <p class="text-xl/7 md:font-normal text-card-foreground">“<slot></slot>“</p>
+      <p class="text-xl/7 md:font-normal text-card-foreground">
+        “<slot></slot>“
+      </p>
     </CardContent>
   </Card>
 </template>
 
 <script setup lang="ts">
   defineProps({
-    name: String,
+    name: {
+      type: String,
+      default: "",
+    },
     title: String,
-    avatar: String,
+    avatar: {
+      type: String,
+      default: "",
+    },
   });
 </script>
 

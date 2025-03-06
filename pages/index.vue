@@ -13,7 +13,7 @@
           >
             <img src="/white-logo.svg" alt="logo" class="w-[28px]" />
             <h1
-              class="text-5xl md:px-16 leading-[50px] relative lg:text-6xl font-semibold md:font-normal text-white px-2 lg:px-0"
+              class="text-4xl md:px-16 leading-[50px] relative lg:text-6xl font-semibold md:font-normal text-white px-2 lg:px-0"
             >
               <span class="relative">
                 <SVGCrown
@@ -22,7 +22,8 @@
 
                 E</span
               >mpowering businesses with <br />
-              cutting-edge technology solutions
+              cutting-edge technology <br class="md:hidden block" />
+              solutions
             </h1>
             <p class="text-base mt-5 font-normal text-white">
               we help businesses rise with solutions
@@ -34,9 +35,11 @@
               together.
             </p>
             <div class="mt-8">
-              <Button size="lg" variant="light" class="text-black-foreground"
-                >Book a session</Button
-              >
+              <NuxtLink to="https://tr.ee/kknw56" target="_blank">
+                <Button size="lg" variant="light" class="text-black-foreground"
+                  >Book a session</Button
+                >
+              </NuxtLink>
             </div>
             <div class="grid grid-cols-12 md:grid-cols-9 gap-4 md:gap-0">
               <SVGPointer class="col-start-3 w-20 md:w-28 md:col-start-4" />
@@ -116,7 +119,7 @@
       </div>
     </Section>
     <!-- Our Solutions -->
-    <Section>
+    <Section id="services">
       <div class="flex flex-col gap-20">
         <h2
           class="text-3xl md:text-4xl font-semibold text-black-foreground text-center flex items-center justify-center"
@@ -139,11 +142,11 @@
                 {{ solution.title }}
               </CardHeader>
               <p
-                class="inlinne-block align-text-bottom font-medium leading-8 text-xl md:text-2xl"
+                class="inlinne-block align-text-bottom font-light leading-8 text-xl md:text-2xl"
               >
                 {{ solution.desc }}
               </p>
-              <p class="flex gap-2 p-0 text-2xl font-semibold">
+              <p class="flex gap-2 p-0 text-2xl font-normal">
                 Let's Talk
                 <img src="/imgs/arrow-up-right.svg" alt="arrow" class="w-6" />
               </p>
@@ -188,7 +191,7 @@
       </div>
     </Section>
     <!-- Testimonies -->
-    <Section>
+    <Section class="mb-2">
       <div class="flex flex-col gap-20">
         <h2
           class="text-3xl md:text-4xl font-semibold text-black-foreground text-center flex items-center justify-center"
@@ -202,15 +205,16 @@
         </div>
       </div>
     </Section>
+    <Footer />
   </main>
 </template>
 
 <script setup lang="ts">
   import SVGCrown from "@/components/ui/svgs/SVGCrown.vue";
   import SVGPointer from "@/components/ui/svgs/SVGPointer.vue";
-  import SVGEarth from "@/components/ui/svgs/SVGEarth.vue";
   import Testimonials from "@/components/templates/landing/Testimonials.vue";
   import Section from "@/components/templates/Section.vue";
+  import Footer from "@/components/templates/Footer.vue";
 
   const img = useImage();
   const heroBackgroundStyle = computed(() => {

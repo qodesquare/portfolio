@@ -22,7 +22,9 @@
         </ul>
 
         <div class="hidden md:block">
-          <Button>Book a session</Button>
+          <NuxtLink to="https://tr.ee/kknw56" target="_blank"
+            ><Button>Book a session</Button></NuxtLink
+          >
         </div>
 
         <HambugerMenu
@@ -33,10 +35,16 @@
           <template #menu-items>
             <ul class="flex items-start gap-8 flex-col text-xl/8 font-medium">
               <li v-for="link in appInfo.navLinks" :key="link.url">
-                <NuxtLink :to="link.url">{{ link.name }}</NuxtLink>
+                <NuxtLink :to="link.url" @click="onMenuClick">{{
+                  link.name
+                }}</NuxtLink>
               </li>
 
-              <li><Button>Book a session</Button></li>
+              <li>
+                <NuxtLink to="https://tr.ee/kknw56" target="_blank"
+                  ><Button>Book a session</Button></NuxtLink
+                >
+              </li>
             </ul>
           </template>
         </HambugerMenu>
@@ -49,16 +57,22 @@
   import Button from "./ui/button/Button.vue";
   import HambugerMenu from "./ui/hamburgermenu/HambugerMenu.vue";
 
+  // TODO: Send this information from server
   const appInfo = ref({
     logo: "/imgs/logo.svg",
     navLinks: [
       { name: "Home", url: "/" },
-      { name: "Services", url: "/services" },
+      { name: "Services", url: "#services" },
       { name: "Careers", url: "/careers" },
     ],
   });
 
   const isOpen = ref(false);
+
+  const onMenuClick = () => {
+    isOpen.value = false;
+  };
+
   const toggleMenu = () => {
     isOpen.value = !isOpen.value;
   };

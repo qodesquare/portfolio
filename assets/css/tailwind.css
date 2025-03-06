@@ -63,6 +63,9 @@
     font-family: var(--font-sans);
     @apply border-border;
   }
+  html {
+    @apply scroll-smooth;
+  }
   body {
     @apply bg-background text-foreground;
   }
