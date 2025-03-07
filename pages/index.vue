@@ -26,7 +26,7 @@
               solutions
             </h1>
             <p class="text-base mt-5 font-normal text-white">
-              we help businesses rise with solutions
+              We help businesses rise with solutions
               <br class="block md:hidden" />
               from software development to
               <br class="hidden md:block" />
