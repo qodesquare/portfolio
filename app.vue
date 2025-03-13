@@ -25,7 +25,7 @@
       {
         name: "description",
         content:
-          "Qodesquare specializes in software development, digital transformation, and IT consulting, helping businesses scale, optimize, and thrive. 🚀 Innovate. Elevate. Dominate.",
+          "Qodesquare specializes in software development, digital transformation, and IT consulting, helping businesses scale, optimize, and thrive. 🚀 Ideate. Innovate. Accelerate",
       },
       {
         name: "keywords",
@@ -42,7 +42,7 @@
       },
       {
         property: "og:description",
-        content: "Your website description here",
+        content: "Qodesquare specializes in software development, digital transformation, and IT consulting, helping businesses scale, optimize, and thrive. 🚀 Ideate. Innovate. Accelerate",
       },
       {
         property: "og:type",
@@ -56,22 +56,22 @@
         property: "og:image",
         content: "https://www.qodesquare.com/q_white_logo.png",
       },
-      // {
-      //   name: 'twitter:card',
-      //   content: 'summary_large_image',
-      // },
-      // {
-      //   name: 'twitter:title',
-      //   content: 'Qodesquare Technologies',
-      // },
-      // {
-      //   name: 'twitter:description',
-      //   content: 'Your website description here',
-      // },
-      // {
-      //   name: 'twitter:image',
-      //   content: 'https://www.yourwebsite.com/image.jpg',
-      // },
+      {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        name: 'twitter:title',
+        content: 'Qodesquare Technologies',
+      },
+      {
+        name: 'twitter:description',
+        content: 'Qodesquare specializes in software development, digital transformation, and IT consulting, helping businesses scale, optimize, and thrive. 🚀 Ideate. Innovate. Accelerate',
+      },
+      {
+        name: 'twitter:image',
+        content: 'https://www.qodesquare.com/q_white_logo.png',
+      },
     ],
   });
 </script>
