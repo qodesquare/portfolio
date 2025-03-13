@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
   useHead({
-    title: "Qodesquare Technologies",
+    title: "Qodesquare Technologies | Software Development, Digital Transformation, IT Consulting",
     meta: [
       {
         name: "robots",
