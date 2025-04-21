@@ -22,7 +22,7 @@
         </ul>
 
         <div class="hidden md:block">
-          <NuxtLink to="https://tr.ee/kknw56" target="_blank"
+          <NuxtLink to="https://tr.ee/aklRqL" target="_blank"
             ><Button>Book a session</Button></NuxtLink
           >
         </div>
@@ -41,7 +41,7 @@
               </li>
 
               <li>
-                <NuxtLink to="https://tr.ee/kknw56" target="_blank"
+                <NuxtLink to="https://tr.ee/aklRqL" target="_blank"
                   ><Button>Book a session</Button></NuxtLink
                 >
               </li>

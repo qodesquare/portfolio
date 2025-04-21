@@ -30,7 +30,7 @@
           <p class="text-base/none">+ 10 Businesses trust our solutions</p>
         </div>
         <div class="mt-4">
-          <NuxtLink to="https://tr.ee/kknw56" target="_blank"
+          <NuxtLink to="https://tr.ee/aklRqL" target="_blank"
             ><Button>Book a session</Button></NuxtLink
           >
         </div>

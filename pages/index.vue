@@ -35,7 +35,7 @@
               together.
             </p>
             <div class="mt-8">
-              <NuxtLink to="https://tr.ee/kknw56" target="_blank">
+              <NuxtLink to="https://tr.ee/aklRqL" target="_blank">
                 <Button size="lg" variant="light" class="text-black-foreground"
                   >Book a session</Button
                 >
@@ -278,34 +278,34 @@
 
   const testimonials = [
     {
-      name: "Edet Effiong",
-      title: "Head of operations, Battery alliance services ",
+      name: "Alex J.",
+      title: "Marketing Director, Jet Away Luggages",
       avatar: "/imgs/sol1.jpeg",
-      text: "Working with qodespace transformed our business. Their tech solutions streamlined our processes and boosted efficiency by 40%!",
+      text: "Qodesquare transformed our business, from offline to to great online presence, they also took our manual tracking system to the next level. Professional, efficient, and highly recommended!",
     },
     {
-      name: "Edet Effiong",
-      title: "Head of operations, Battery alliance services ",
+      name: "The Secretariat",
+      title: "ASUP Secretariat",
       avatar: "/imgs/sol1.jpeg",
-      text: "Working with qodespace transformed our business. Their tech solutions streamlined our processes and boosted efficiency by 40%!",
+      text: "Working with this tech company was seamless. They delivered a responsive, professional website that reflects ASUP’s vision perfectly. Truly impressive work",
     },
     {
-      name: "Edet Effiong",
-      title: "Head of operations, Battery alliance services ",
+      name: "Edet L.",
+      title: "Urban Styles Boutique",
       avatar: "/imgs/sol1.jpeg",
-      text: "Working with qodespace transformed our business. Their tech solutions streamlined our processes and boosted efficiency by 40%!",
+      text: "Our previous website was slow, outdated, and lacked functionality. The rebranding and redesign process was smooth, and the final product exceeded our expectations. Amazing work!",
     },
     {
-      name: "Edet Effiong",
-      title: "Head of operations, Battery alliance services ",
+      name: "AGILE Project Team",
+      title: " Ministry of Agriculture",
       avatar: "/imgs/sol1.jpeg",
-      text: "Working with qodespace transformed our business. Their tech solutions streamlined our processes and boosted efficiency by 40%!",
+      text: "Qodesquare brought our AGILE Project vision to life with a vibrant, functional website. Their work captured our mission and made our outreach stronger.",
     },
     {
-      name: "Edet Effiong",
-      title: "Head of operations, Battery alliance services ",
+      name: "Oluwaseun A.",
+      title: "Operations Manager at Swift Retail Solutions",
       avatar: "/imgs/sol1.jpeg",
-      text: "Working with qodespace transformed our business. Their tech solutions streamlined our processes and boosted efficiency by 40%!",
+      text: "Qodesquare’s team is top-notch. They took our ideas and turned them into a stunning website that’s easy to navigate. Their attention to detail is impressive.",
     },
   ];
 </script>
