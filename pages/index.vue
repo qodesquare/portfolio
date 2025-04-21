@@ -146,10 +146,14 @@
               >
                 {{ solution.desc }}
               </p>
-              <p class="flex gap-2 p-0 text-2xl font-normal">
+              <NuxtLink
+                to="https://tr.ee/aklRqL"
+                target="_blank"
+                class="flex gap-2 p-0 text-2xl font-normal"
+              >
                 Let's Talk
                 <img src="/imgs/arrow-up-right.svg" alt="arrow" class="w-6" />
-              </p>
+              </NuxtLink>
             </CardContent>
           </Card>
         </div>
