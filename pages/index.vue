@@ -218,7 +218,6 @@
   import SVGPointer from "@/components/ui/svgs/SVGPointer.vue";
   import Testimonials from "@/components/templates/landing/Testimonials.vue";
   import Section from "@/components/templates/Section.vue";
-  import Footer from "@/components/templates/Footer.vue";
 
   const img = useImage();
   const heroBackgroundStyle = computed(() => {

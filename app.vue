@@ -7,12 +7,15 @@
     </DevOnly> -->
     <NavBar />
     <NuxtPage />
+    <Footer />
   </div>
 </template>
 
 <script setup lang="ts">
+  import Footer from "@/components/templates/Footer.vue";
   useHead({
-    title: "Qodesquare Technologies | Software Development, Digital Transformation, IT Consulting",
+    title:
+      "Qodesquare Technologies | Software Development, Digital Transformation, IT Consulting",
     meta: [
       {
         name: "robots",
@@ -42,7 +45,8 @@
       },
       {
         property: "og:description",
-        content: "Qodesquare specializes in software development, digital transformation, and IT consulting, helping businesses scale, optimize, and thrive. 🚀 Ideate. Innovate. Accelerate",
+        content:
+          "Qodesquare specializes in software development, digital transformation, and IT consulting, helping businesses scale, optimize, and thrive. 🚀 Ideate. Innovate. Accelerate",
       },
       {
         property: "og:type",
@@ -57,20 +61,21 @@
         content: "https://www.qodesquare.com/q_white_logo.png",
       },
       {
-        name: 'twitter:card',
-        content: 'summary_large_image',
+        name: "twitter:card",
+        content: "summary_large_image",
       },
       {
-        name: 'twitter:title',
-        content: 'Qodesquare Technologies',
+        name: "twitter:title",
+        content: "Qodesquare Technologies",
       },
       {
-        name: 'twitter:description',
-        content: 'Qodesquare specializes in software development, digital transformation, and IT consulting, helping businesses scale, optimize, and thrive. 🚀 Ideate. Innovate. Accelerate',
+        name: "twitter:description",
+        content:
+          "Qodesquare specializes in software development, digital transformation, and IT consulting, helping businesses scale, optimize, and thrive. 🚀 Ideate. Innovate. Accelerate",
       },
       {
-        name: 'twitter:image',
-        content: 'https://www.qodesquare.com/q_white_logo.png',
+        name: "twitter:image",
+        content: "https://www.qodesquare.com/q_white_logo.png",
       },
     ],
   });
