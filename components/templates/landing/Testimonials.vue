@@ -48,6 +48,7 @@
   import { ref } from "vue";
   import { watchOnce } from "@vueuse/core";
   import type { CarouselApi } from "@/components/ui/carousel";
+  import type { Testimonial } from "@/types/testimonial";
 
   const api = ref<CarouselApi>();
   const totalSlides = ref(0);
@@ -65,11 +66,11 @@
 
     api.on("select", () => {
       currentSlide.value = api.selectedScrollSnap();
-      console.log(
-        currentSlide.value,
-        totalSlides.value,
-        api.selectedScrollSnap()
-      );
+      // console.log(
+      //   currentSlide.value,
+      //   totalSlides.value,
+      //   api.selectedScrollSnap()
+      // );
     });
   });
 
@@ -80,16 +81,15 @@
   }
 
   const autoplay = Autoplay({
-    delay: 2000,
-    duration: 1000,
-
+    delay: 20000,
+    // duration: 1000,
     stopOnMouseEnter: true,
     stopOnInteraction: false,
   });
 
-  defineProps({
-    testimonials: Array,
-  });
+  defineProps<{
+    testimonials: Testimonial[];
+  }>();
 </script>
 
 <style scoped></style>

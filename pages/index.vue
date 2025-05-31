@@ -218,6 +218,7 @@
   import SVGPointer from "@/components/ui/svgs/SVGPointer.vue";
   import Testimonials from "@/components/templates/landing/Testimonials.vue";
   import Section from "@/components/templates/Section.vue";
+import type { Testimonial } from "@/types/testimonial";
 
   const img = useImage();
   const heroBackgroundStyle = computed(() => {
@@ -279,7 +280,7 @@
     },
   ];
 
-  const testimonials = [
+  const testimonials: Testimonial[] = [
     {
       name: "Alex J.",
       title: "Marketing Director, Jet Away Luggages",
