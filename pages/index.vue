@@ -210,7 +210,6 @@
         </div>
       </div>
     </Section>
-    <Footer />
   </main>
 </template>
 
@@ -219,9 +218,8 @@
   import SVGPointer from "@/components/ui/svgs/SVGPointer.vue";
   import Testimonials from "@/components/templates/landing/Testimonials.vue";
   import Section from "@/components/templates/Section.vue";
-  import type { Testimonial } from "@/types/testimonial";
-  import Footer from "@/components/templates/Footer.vue";
-
+import type { Testimonial } from "@/types/testimonial";
+  
   const img = useImage();
   const heroBackgroundStyle = computed(() => {
     const imgUrl = img("/imgs/together_bg.jpeg");
