@@ -200,8 +200,9 @@
         <h2
           class="text-3xl md:text-4xl font-semibold text-black-foreground text-center flex items-center justify-center"
         >
-          Trusted by Businesses and <br />
-          individuals Like Yours
+          Trusted by 500+
+          <br />
+          Professionals Like You
         </h2>
 
         <div class="grid grid-cols-1 gap-6">
@@ -218,7 +219,8 @@
   import SVGPointer from "@/components/ui/svgs/SVGPointer.vue";
   import Testimonials from "@/components/templates/landing/Testimonials.vue";
   import Section from "@/components/templates/Section.vue";
-import type { Testimonial } from "@/types/testimonial";
+  import type { Testimonial } from "@/types/testimonial";
+  import Footer from "@/components/templates/Footer.vue";
 
   const img = useImage();
   const heroBackgroundStyle = computed(() => {
@@ -251,19 +253,19 @@ import type { Testimonial } from "@/types/testimonial";
   ];
   const solutions = [
     {
-      desc: "A confusing or unattractive website drives customers away. We create easy-to-use, visually appealing designs that make your business stand out and keep users engaged",
+      desc: "We co-create a clear tech roadmap and scalable architecture so every next step is faster, safer, and smarter.",
       bgImg: "/imgs/sol3.jpeg",
-      title: "Product Design",
+      title: "Plan & Blueprint",
     },
     {
-      desc: "Slow, outdated systems can cost you time and money. We build fast, reliable websites and software that help you work smarter and serve customers better.",
+      desc: "From sleek UX to AI-driven code, we design, develop, and ship custom products—on time, on budget, and ready to perform.",
       bgImg: "/imgs/sol2.jpeg",
-      title: "Software & Web Development",
+      title: "Build & Launch",
     },
     {
-      desc: "Repetitive tasks waste valuable time. We use AI to automate processes, improve customer interactions, and help your business run more efficiently.",
+      desc: "We make your product shine, rally the right audience, and equip your team with training that turns first-time users into lifelong fans.",
       bgImg: "/imgs/sol1.jpeg",
-      title: "AI Automation",
+      title: "Engage & Grow",
     },
   ];
 
